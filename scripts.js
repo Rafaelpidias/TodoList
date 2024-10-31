@@ -6,11 +6,16 @@ const listaCompleta = document.querySelector('.list-tasks')
 let minhaListaDeItens = []
 
 function adicionarNovaTarefa() {
+    if(input.value == ''){
+        alert('Por favor, insira uma tarefa válida.')
+        return  // encerra a função caso o input seja vazio
+    }
     minhaListaDeItens.push({
         tarefa: input.value,
         concluida: false
 
     })
+   
 
     input.value = ''
 
