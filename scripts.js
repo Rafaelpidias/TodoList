@@ -1,7 +1,7 @@
 const button = document.querySelector('.button-add-task')
 const input = document.querySelector('.input-task')
 const listaCompleta = document.querySelector('.list-tasks')
-const userText = document.getElementById('empty').value
+
 
 let minhaListaDeItens = []
 
@@ -63,16 +63,7 @@ function recarregarTarefas() {
     mostrarTarefas()
 }
 
-function display() {
 
-
-    if (userText == "") {
-        alert("Por favor, preencha o campo de tarefa.")
-        
-
-    }
-
-}
 
 
 recarregarTarefas()
