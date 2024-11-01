@@ -7,9 +7,11 @@ let minhaListaDeItens = []
 
 function adicionarNovaTarefa() {
     if(input.value == ''){
-        alert('Por favor, insira uma tarefa válida.')
-        return  // encerra a função caso o input seja vazio
+        showToast('Por favor, insira uma tarefa!');
+        return; // encerra a função caso o input seja vazio
+       
     }
+    
     minhaListaDeItens.push({
         tarefa: input.value,
         concluida: false
@@ -20,6 +22,20 @@ function adicionarNovaTarefa() {
     input.value = ''
 
     mostrarTarefas()
+}
+
+function showToast(message) {
+    const toast = document.createElement('div');
+    toast.className = 'toast'; // Adicione estilos para .toast no CSS
+    toast.innerText = message;
+    document.body.appendChild(toast);
+
+    setTimeout(() => {
+        toast.classList.add('fade-out'); // Adicione estilos para fade-out no CSS
+        setTimeout(() => {
+            document.body.removeChild(toast);
+        }, 500) // Tempo de duração do fade-out
+    }, 3000) // Tempo que o toast ficará visível
 }
 
 function mostrarTarefas() {

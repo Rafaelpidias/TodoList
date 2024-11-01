@@ -91,3 +91,21 @@ img {
   text-decoration:line-through;
 
 }
+
+.toast{
+ display:flex;
+ background-color: #FF0000;
+ align-items:center;
+ justify-content:center;
+ border-radius:5px;
+ margin:0 500px;
+ color:#ffff;
+ 
+}
+
+.fade-out{
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  background-color:#00BFFF;
+  color:#7b68ee;
+} 
