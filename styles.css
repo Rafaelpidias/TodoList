@@ -14,11 +14,12 @@ body {
 }
 
 .container {
-  background-color: #d1d1d1d1;
+  background: transparent;
   width: 500px;
   border-radius: 10px;
   padding: 20px;
   margin: 100px auto 0; /*margin auto esquerda e direita centraliza a div*/
+  backdrop-filter: blur(10px);
 }
 
 .input-task {
@@ -58,7 +59,7 @@ body {
 }
 
 .task {
-  background-color: #f2f2f2;
+  background-color: #B0C4DE;
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
@@ -190,7 +191,10 @@ img {
     height: 30px;
     margin-bottom: 10px;
     width: 300px;
-    font-size: 20px;
+    font-size: 18px;
+    line-height:12px;
+    
+    
   }
 
   .toast {
