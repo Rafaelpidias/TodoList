@@ -13,4 +13,4 @@
   
 <br>
 
-<img width="65%" src="https://github.com/Rafaelpidias/jokenPo/blob/master/assets/Mockupjp.png?raw=true">
+<img width="65%" src="https://github.com/Rafaelpidias/TodoList/blob/main/img/Mockuptodolist.png?raw=true">
